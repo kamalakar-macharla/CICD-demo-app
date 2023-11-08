@@ -16,3 +16,8 @@ stages:
         steps:
           - bash: |
              echo "Hello Zensar"
+             pwd
+             echo "list the files in the dir: $(ls -l)"
+             echo "Lixun machine name: $(hostname)"
+             echo "java version : $(java --version)"
+             echo "node version : $(node --version)"
