@@ -21,3 +21,6 @@ stages:
              echo "Lixun machine name: $(hostname)"
              echo "java version : $(java --version)"
              echo "node version : $(node --version)"
+             mvn clean install
+             echo "After the maven build: $(ls -l)"
+             
