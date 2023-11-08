@@ -23,4 +23,13 @@ stages:
              echo "node version : $(node --version)"
              mvn clean install
              echo "After the maven build: $(ls -l)"
+  - stage: DeploymentToDev
+    jobs:
+      - job: devDeploy
+  - stage: DeploymentToQa
+    jobs:
+      - job: qaDeploy
+  - stage: DeploymentToProd
+    jobs:
+      - job: prodDeploy
              
